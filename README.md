@@ -5,15 +5,9 @@ Creating a simulation of double pendulum and analysing its behavior for various 
 
 **Differential Equations Link:** https://www.myphysicslab.com/pendulum/double-pendulum-en.html
 
-$θ_1' = ω_1$
+![image](https://user-images.githubusercontent.com/22321159/119180006-4b374300-ba8d-11eb-9fd7-1cea622215db.png)
 
-$θ_2' = ω_2$
-
-$ω_1' = \frac{−g (2 m_1 + m_2) sin θ_1 − m_2 g sin(θ_1 − 2 θ_2) − 2 sin(θ_1 − θ_2) m_2 (ω_2^2 L_2 + ω_1^2 L_1 cos(θ_1 − θ_2))} {L_1 (2 m_1 + m_2 − m_2 cos(2 θ_1 − 2 θ_2))}$
-
-$ω_2' = \frac{2 sin(θ_1−θ_2) (ω_1^2 L_1 (m_1 + m_2) + g(m_1 + m_2) cos θ_1 + ω_2^2 L_2 m_2 cos(θ_1 − θ_2))}{L_2 (2 m_1 + m_2 − m_2 cos(2 θ_1 − 2 θ_2))}$
-
-
+**Differential Equation Solver:** 4th order Runge-Kutta Method
 
 **Requirements:** OpenCV(C++), CUDA
 
@@ -25,7 +19,7 @@ $ω_2' = \frac{2 sin(θ_1−θ_2) (ω_1^2 L_1 (m_1 + m_2) + g(m_1 + m_2) cos θ_
     * Parameters - theta1, theta2, m1, m2, l1, l2, h
 
 * theta_space - creates a 2D-space for values of theta1 and theta2
-    * Parametes - row and col of the mat
+    * Parameters - row and col of the mat
 
 **For compiling any file:**  ```make <file_name>```
  
